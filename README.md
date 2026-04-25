@@ -32,7 +32,7 @@ Nibble is a Chrome extension that automatically saves your video progress on **a
 
 ### Chrome Web Store (recommended)
 
-[**Install Nibble from the Chrome Web Store →**](https://chromewebstore.google.com/detail/nibble/ihgdnpecnifeemfknbhiefgdeeahddek)
+[**Install Nibble from the Chrome Web Store →**](https://chromewebstore.google.com/detail/nibble/dnjielhhidlnjoepcinmffkhdjgdnfjf)
 
 ### Load locally (for development)
 
