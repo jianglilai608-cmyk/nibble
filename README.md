@@ -21,9 +21,9 @@ Nibble is a Chrome extension that automatically saves your video progress on **a
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/popup.png" width="300" alt="Nibble popup"/>
+  <img src="nibble_promo_1400x560.png" width="300" alt="Nibble popup"/>
   &nbsp;&nbsp;
-  <img src="screenshots/dashboard.png" width="600" alt="Nibble dashboard"/>
+  <img src="nibble_screenshot_1280x800.png" width="600" alt="Nibble dashboard"/>
 </p>
 
 ---
