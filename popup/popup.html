@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Nibble</title>
+  <link rel="stylesheet" href="popup.css"/>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <rect width="24" height="24" rx="7" fill="#D85A30"/>
+        <circle cx="18" cy="6" r="5" fill="white"/>
+        <polygon points="7,6 18,12 7,18" fill="white"/>
+      </svg>
+      <span class="logo-name">nibble</span>
+    </div>
+    <span class="auto-badge" id="badge">自动保存 · 每5分钟</span>
+  </div>
+
+  <div id="current-block" class="current-block hidden">
+    <div class="site-row">
+      <div class="site-dot"></div>
+      <span class="site-name" id="cur-site"></span>
+    </div>
+    <div class="cur-title" id="cur-title"></div>
+    <div class="prog-row">
+      <div class="prog-bar"><div class="prog-fill" id="cur-fill"></div></div>
+      <span class="prog-time" id="cur-time"></span>
+    </div>
+    <div class="auto-row">
+      <span class="auto-label">已自动保存</span>
+      <div class="auto-status">
+        <div class="pulse-dot"></div>
+        <span id="cur-saved-ago"></span>
+      </div>
+    </div>
+  </div>
+
+  <button class="save-now-btn hidden" id="save-now-btn">立即保存当前进度</button>
+  <div id="no-video-block" class="no-video hidden">
+    <div class="no-video-icon">▷</div>
+    <p>当前页面没有检测到视频</p>
+  </div>
+
+  <div class="section-header">
+    <span class="section-title">最近的 nibble</span>
+    <span class="section-count" id="count-badge">0 个</span>
+  </div>
+
+  <div id="list" class="list"></div>
+
+  <div class="settings">
+    <div class="setting-row">
+      <span class="setting-label">自动保存间隔</span>
+      <div class="seg" id="seg">
+        <button data-min="1">1分</button>
+        <button data-min="5" class="active">5分</button>
+        <button data-min="10">10分</button>
+      </div>
+    </div>
+    <div class="setting-row">
+      <span class="setting-label">回到页面时提示</span>
+      <div class="toggle" id="tog"><div class="knob"></div></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a id="dash-link">查看全部记录 →</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

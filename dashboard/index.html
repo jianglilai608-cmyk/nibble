@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Nibble — 我的记录</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30">
+        <rect width="30" height="30" rx="9" fill="#D85A30"/>
+        <circle cx="22" cy="8" r="6" fill="white"/>
+        <polygon points="9,7 22,15 9,23" fill="white"/>
+      </svg>
+      <span class="logo-name">nibble</span>
+    </div>
+    <input class="search" id="search" type="text" placeholder="搜索视频标题或网站…"/>
+  </div>
+
+  <div class="stats-row" id="stats-row">
+    <div class="stat"><div class="stat-n" id="s-progress">—</div><div class="stat-l">进行中</div></div>
+    <div class="stat"><div class="stat-n" id="s-done">—</div><div class="stat-l">已看完</div></div>
+    <div class="stat"><div class="stat-n" id="s-week">—</div><div class="stat-l">本周观看</div></div>
+    <div class="stat"><div class="stat-n" id="s-sites">—</div><div class="stat-l">平台数</div></div>
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="chip active" data-filter="all">全部</button>
+    <button class="chip" data-filter="progress">进行中</button>
+    <button class="chip" data-filter="done">已完成</button>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="empty-state hidden" id="empty">
+    <div class="empty-icon">▷</div>
+    <p>还没有记录</p>
+    <p class="empty-sub">去任意网页播放视频，Nibble 会自动帮你保存进度</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
